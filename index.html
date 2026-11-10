@@ -294,7 +294,7 @@ legend{font-size:12.5px;color:var(--ink-2);padding:0 4px}
   <aside class="rail">
     <div class="brand"><b>ТЦ «Идель»</b><span>Мелеуз, ул. Бурангулова, 19А</span></div>
     <nav class="nav" id="nav"></nav>
-    <div class="rail-foot">Копия для просмотра от 10.11.2026 23:36. Цифры из «Отчёта Роберт 3» по сентябрь 2026.<br>Обновлено 10.11.2026</div>
+    <div class="rail-foot">Копия для просмотра от 10.11.2026 23:40. Цифры из «Отчёта Роберт 3» по сентябрь 2026.<br>Обновлено 10.11.2026</div>
   </aside>
   <div class="main">
     <header class="top">
@@ -556,7 +556,7 @@ var PEOPLE = {
   w_clean:{n:"Уборщица",s:"УБ",c:"#008300",role:"Уборка общих зон"},
   w_guard:{n:"Охранник",s:"ОХР",c:"#e34948",role:"Пост охраны"}
 };
-var PERSONAS = ["sdr","srz","vrsh","mgr","w_clean","w_guard"];
+var PERSONAS = ["sdr"]; /* в демоверсии выбор роли не предусмотрен (решение Даукиля 10.11.2026); полный список: sdr, srz, vrsh, mgr, w_clean, w_guard */
 
 var TASKS_SEED = [
  {id:"k01",t:"Уточнить сумму долга СРЗ перед ВРШ (2,04 млн по расчёту на 9.11)",o:"sdr",r:"sdr",d:"2026-11-20",s:"doing",l:"ledgers"},
@@ -679,7 +679,7 @@ function save(coll,id,body){
   });
 }
 function initDb(){
-  if(!window.claude||!window.claude.use){banner("Копия только для просмотра, данные на 10.11.2026 23:36. Отметки, задачи и загрузки здесь не сохраняются.");return;}
+  if(!window.claude||!window.claude.use){banner("Копия только для просмотра, данные на 10.11.2026 23:40. Отметки, задачи и загрузки здесь не сохраняются.");return;}
   window.claude.use("db").then(function(d){
     if(!d){banner("Хранилище недоступно: войдите в Claude, чтобы изменения сохранялись и были видны всем.");return;}
     db=d;
