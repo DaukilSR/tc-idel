@@ -294,7 +294,7 @@ legend{font-size:12.5px;color:var(--ink-2);padding:0 4px}
   <aside class="rail">
     <div class="brand"><b>ТЦ «Идель»</b><span>Мелеуз, ул. Бурангулова, 19А</span></div>
     <nav class="nav" id="nav"></nav>
-    <div class="rail-foot">Копия для просмотра от 10.11.2026 23:35. Цифры из «Отчёта Роберт 3» по сентябрь 2026.<br>Обновлено 10.11.2026</div>
+    <div class="rail-foot">Копия для просмотра от 10.11.2026 23:36. Цифры из «Отчёта Роберт 3» по сентябрь 2026.<br>Обновлено 10.11.2026</div>
   </aside>
   <div class="main">
     <header class="top">
@@ -679,7 +679,7 @@ function save(coll,id,body){
   });
 }
 function initDb(){
-  if(!window.claude||!window.claude.use){banner("Копия только для просмотра, данные на 10.11.2026 23:35. Отметки, задачи и загрузки здесь не сохраняются. Рабочая версия — на claude.ai.");return;}
+  if(!window.claude||!window.claude.use){banner("Копия только для просмотра, данные на 10.11.2026 23:36. Отметки, задачи и загрузки здесь не сохраняются.");return;}
   window.claude.use("db").then(function(d){
     if(!d){banner("Хранилище недоступно: войдите в Claude, чтобы изменения сохранялись и были видны всем.");return;}
     db=d;
